@@ -1,0 +1,294 @@
+#back{
+    background-image: url("C1.jpg");
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#goddess{
+    position: absolute;
+    left: 50%;
+    top: 15vh;
+    height: 40vh;
+    width: 40vh;
+    transform: translateX(-50%);
+    background-image:url("Mahamaya.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgb(255, 234, 0);
+}
+#god{
+    position: absolute;
+    bottom: 5vh;
+    right: 7.5vw;
+    height: 45vh;
+    width: 45vh;
+    background-image:url("VIshnu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#mk{
+    position: absolute;
+    bottom: 0vh;
+    left: 10vw;
+    height: 25vh;
+    width: 25vh;
+    background-image:url("mk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#ms{
+    position: absolute;
+    bottom: 1vh;
+    left: 0vw;
+    height: 30vh;
+    width: 30vh;
+    background-image:url("Mahisa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sn{
+    position: absolute;
+    bottom: -7vh;
+    left: 3vw;
+    height: 40vh;
+    width: 40vh;
+    background-image:url("sn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.name{
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    opacity: 0;
+    transform: translateX(-50%);
+    font-size: 40px;
+}
+.story{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    width: 80%;
+    opacity: 0;
+    transform: translateX(-50%);
+    font-size: large;
+    background-color: rgb(0,0,0,0.3);
+    padding: 10px 20px;
+    color: white;
+    /* animation: comein 0.6s linear forwards;
+    animation-delay: 1s; */
+}
+.comein1{
+    animation: comein 0.6s linear forwards;
+    animation-delay: 0.4s;
+}
+.comein2{
+    animation: comein 0.6s linear forwards;
+    animation-delay: 1s;
+}
+@keyframes comein {
+    100%{
+        opacity: 1;
+    }
+}
+.slider{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+.char{
+    margin: 0 40px 0;
+    display: inline;
+    padding: 5px;
+    background-image: linear-gradient(45deg, yellow, gold, orange);
+    border-radius: 5px;
+}
+
+.active{
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#prev, #next{
+    border: 3px solid rgb(232, 247, 255);
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 900;
+    box-shadow: 0 0 10px rgb(136, 201, 255);
+    color: white;
+    text-shadow: 0 0 10px rgb(1, 121, 220);
+}
+
+#n1{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 15px rgb(144, 3, 252);
+}
+#n2{
+    color: rgb(255, 251, 0);
+    visibility: hidden;
+    text-shadow: 0 0 15px rgb(255, 0, 0);
+}
+#n3{
+    color: rgb(157, 225, 255);
+    visibility: hidden;
+    text-shadow: 0 0 15px rgb(29, 0, 172);
+}
+
+@media (max-width: 1000px) {
+    #back{
+        min-height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #goddess{
+        position: absolute;
+        left: 50%;
+        top: 15vh;
+        height: 50vmin;
+        width: 50vmin;
+        transform: translateX(-50%);
+    }
+    #god{
+        position: absolute;
+        bottom: 5vh;
+        right: 0vw;
+        height: 55vmin;
+        width: 55vmin;
+        background-image:url("VIshnu.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #mk{
+        position: absolute;
+        bottom: 3vh;
+        left: 0vw;
+        height: 25vmin;
+        width: 25vmin;
+        background-image:url("mk.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #ms{
+        position: absolute;
+        bottom: 1vh;
+        left: 0vw;
+        height: 40vmin;
+        width: 40vmin;
+        background-image:url("Mahisa.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #sn{
+        position: absolute;
+        bottom: -5vh;
+        left: 3vw;
+        height: 50vmin;
+        width: 50vmin;
+        background-image:url("sn.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .name{
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        width: 60%;
+        opacity: 0;
+        transform: translateX(-50%);
+        font-size: larger;
+    }
+    .story{
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        width: 90%;
+        opacity: 0;
+        transform: translateX(-50%);
+        font-size: smaller;
+        background-color: rgb(0,0,0,0.3);
+        padding: 10px 20px;
+        color: white;
+    }
+    .comein1{
+        animation: comein 0.6s linear forwards;
+        animation-delay: 0.4s;
+    }
+    .comein2{
+        animation: comein 0.6s linear forwards;
+        animation-delay: 1s;
+    }
+    @keyframes comein {
+        100%{
+            opacity: 1;
+        }
+    }
+    .slider{
+        display: block;
+        position: absolute;
+        height: 45vh;
+        width: 100vw;
+        left: 50%;
+        top: 100vh;
+        background-color: black;
+        align-items: center;
+    }
+    
+    .char{
+        text-align: center;
+        margin-top: 20px;
+        display: block;
+        padding: 5px;
+        width: 60%;
+        background-image: linear-gradient(45deg, yellow, gold, orange);
+        border-radius: 5px;
+        margin-left: 20%;
+    }
+    .active{
+        border: 5px solid white;
+        border-radius: 5px;
+    }
+    
+    #prev, #next{
+        text-align: center;
+        margin-top: 20px;
+        display: block;
+        border: 3px solid rgb(232, 247, 255);
+        border-radius: 10px;
+        padding: 5px;
+        cursor: pointer;
+        background-color: transparent;
+        font-weight: 900;
+        box-shadow: 0 0 10px rgb(136, 201, 255);
+        color: white;
+        text-shadow: 0 0 10px rgb(1, 121, 220);
+    }
+    
+    #n1{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px rgb(144, 3, 252);
+    }
+    #n2{
+        color: rgb(255, 251, 0);
+        visibility: hidden;
+        text-shadow: 0 0 15px rgb(255, 0, 0);
+    }
+    #n3{
+        color: rgb(157, 225, 255);
+        visibility: hidden;
+        text-shadow: 0 0 15px rgb(29, 0, 172);
+    }
+}
